@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Catálogos</title>
+
+<!-- Ícones (Font Awesome) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+        height: 100vh;
+        background: linear-gradient(135deg, #0f172a, #1e293b, #020617);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+    }
+
+    .container {
+        text-align: center;
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(15px);
+        padding: 40px;
+        border-radius: 20px;
+        box-shadow: 0 0 30px rgba(0,0,0,0.5);
+        width: 90%;
+        max-width: 400px;
+        animation: fadeIn 1s ease-in-out;
+    }
+
+    h1 {
+        margin-bottom: 10px;
+        font-size: 28px;
+    }
+
+    p {
+        margin-bottom: 30px;
+        color: #cbd5f5;
+    }
+
+    .btn {
+        display: block;
+        text-decoration: none;
+        padding: 15px;
+        margin: 15px 0;
+        border-radius: 12px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    .btn1 {
+        background: linear-gradient(45deg, #22c55e, #16a34a);
+    }
+
+    .btn2 {
+        background: linear-gradient(45deg, #3b82f6, #2563eb);
+    }
+
+    .btn:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 15px rgba(255,255,255,0.2);
+    }
+
+    .whatsapp {
+        margin-top: 20px;
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+        background: #25d366;
+        padding: 12px 20px;
+        border-radius: 10px;
+        font-weight: bold;
+        color: white;
+        transition: 0.3s;
+    }
+
+    .whatsapp:hover {
+        background: #1ebe5d;
+        transform: scale(1.05);
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+    <h1>📚 Nossos Catálogos</h1>
+    <p>Escolha abaixo o catálogo que deseja visualizar</p>
+
+    <a href="Catalogoplastico.pdf" class="btn btn1">📘 Plásticos</a>
+    <a href="Catalogoembalagem.pdf" class="btn btn2">📗 Embalagens </a>
+
+    <a href="https://wa.me/5585999999999" class="whatsapp" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i> Falar no WhatsApp
+    </a>
+</div>
+
+</body>
+</html>
